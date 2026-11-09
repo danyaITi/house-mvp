@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T12:00:00Z",
+  "title": "Design System Domovid",
+  "extensions": {
+    "colorMeta": {
+      "terracotta": {"role":"primary","displayName":"Measured Terracotta","canonical":"#9b4f38","tonalRamp":["#33170f","#552519","#733725","#9b4f38","#b96b52","#d6967f","#edc3b3","#f8e8e0"]},
+      "warm-paper": {"role":"neutral","displayName":"Warm Mineral Paper","canonical":"#f3efe7","tonalRamp":["#26231e","#48423a","#6c6459","#918779","#b5aa9a","#d5ccbd","#e8e0d2","#f3efe7"]},
+      "graphite": {"role":"neutral","displayName":"Workshop Graphite","canonical":"#282621","tonalRamp":["#171612","#282621","#464139","#665f55","#877f73","#aaa296","#d1cbc1","#f1eee9"]}
+    },
+    "typographyMeta": {
+      "display": {"displayName":"Domestic Editorial Display","purpose":"Opening promise and major calculation values."},
+      "body": {"displayName":"Approachable Interface Body","purpose":"Controls, explanations and measurements."}
+    },
+    "shadows": [
+      {"name":"model-ambient","value":"0 18px 44px rgba(58,48,36,.14), 0 4px 12px rgba(58,48,36,.08)","purpose":"The main conceptual model surface only."}
+    ],
+    "motion": [
+      {"name":"control-state","value":"180ms ease-out","purpose":"Short option and button state changes."}
+    ],
+    "breakpoints": [
+      {"name":"mobile-sequence","value":"780px"},
+      {"name":"compact-desktop","value":"1050px"}
+    ]
+  },
+  "components": [
+    {
+      "name":"Primary Action",
+      "kind":"button",
+      "refersTo":"button-primary",
+      "description":"Advances from the brief to the generated concept.",
+      "html":"<button class=\"ds-primary\">Показать мой вариант <span aria-hidden=\"true\">→</span></button>",
+      "css":".ds-primary{display:flex;justify-content:space-between;align-items:center;background:#9b4f38;color:#fff;border:0;border-radius:11px;padding:17px 19px;font:700 16px Manrope,Arial,sans-serif;box-shadow:0 10px 24px rgba(115,55,37,.2);transition:background .18s ease-out,transform .18s ease-out}.ds-primary:hover{background:#733725;transform:translateY(-1px)}.ds-primary:focus-visible{outline:3px solid #2c6570;outline-offset:3px}"
+    },
+    {
+      "name":"Selected Segment",
+      "kind":"button",
+      "refersTo":"button-selected",
+      "description":"Represents one selected customer choice.",
+      "html":"<button class=\"ds-segment\" aria-pressed=\"true\">Газобетон</button>",
+      "css":".ds-segment{background:#282621;color:#fff;border:1px solid #282621;border-radius:11px;padding:11px 15px;font:600 14px Manrope,Arial,sans-serif}.ds-segment:focus-visible{outline:3px solid #2c6570;outline-offset:3px}"
+    },
+    {
+      "name":"Preliminary Range",
+      "kind":"custom",
+      "description":"A trustworthy cost range with nearby date and region.",
+      "html":"<section class=\"ds-range\"><small>ПРЕДВАРИТЕЛЬНЫЙ РАСЧЁТ</small><strong>9,8–12,1 млн ₽</strong><span>Московская область · цены на 17.10.2026</span></section>",
+      "css":".ds-range{display:grid;gap:8px;color:#282621;font-family:Manrope,Arial,sans-serif}.ds-range small{color:#9b4f38;font-size:11px;font-weight:700;letter-spacing:.12em}.ds-range strong{color:#733725;font:700 31px/1.08 'PT Serif',Georgia,serif}.ds-range span{color:#6f695f;font-size:12px}"
+    }
+  ],
+  "narrative": {
+    "northStar":"The Comprehensible Model Table",
+    "overview":"Domovid borrows the care and material credibility of an architect's model table while keeping professional CAD complexity out of the customer's path. The house model is the primary evidence; typography and calculations explain its consequences.",
+    "keyCharacteristics":["Warm, mineral and quiet","One active decision group at a time","One source for model, quantities and price","Clear assumptions instead of decorative CAD chrome"],
+    "rules":[
+      {"name":"The Scarce Terracotta Rule","body":"Terracotta identifies action or consequence and should not become general decoration.","section":"colors"},
+      {"name":"The Plain Language Rule","body":"A customer-facing label uses household language before construction terminology.","section":"typography"},
+      {"name":"The Model Earns Depth Rule","body":"Shadows belong to the primary model surface, not every container.","section":"elevation"}
+    ],
+    "dos":["Do keep a ready example visible.","Do explain price changes.","Do provide text equivalents for canvas information.","Do sequence mobile tasks."],
+    "donts":["Don't present the range as a quotation.","Don't expose CAD vocabulary first.","Don't compress desktop panels onto mobile.","Don't use generic AI gradients or icon-card grids."]
+  }
+}
