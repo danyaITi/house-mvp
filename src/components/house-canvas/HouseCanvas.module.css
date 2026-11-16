@@ -1,0 +1,9 @@
+.three-loading {
+  display: grid;
+  place-items: center;
+  min-height: 470px;
+  border-radius: var(--radius);
+  background: #e7dfd1;
+  color: var(--muted);
+  font-size: 0.75rem;
+}

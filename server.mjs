@@ -1,3 +1,5 @@
+// TODO: будущий локальный сервер для ИИ
+
 import { createServer } from 'node:http'
 import { readFile, stat } from 'node:fs/promises'
 import { dirname, extname, join, normalize, resolve } from 'node:path'
